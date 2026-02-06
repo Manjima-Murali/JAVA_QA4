@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.java_qa4.AddStudentController">
+
+    <Label text="Add Student" style="-fx-font-size:18px; -fx-font-weight:bold"/>
+
+    <TextField fx:id="idField" promptText="Student ID"/>
+    <TextField fx:id="nameField" promptText="Student Name"/>
+    <TextField fx:id="emailField" promptText="Email ID"/>
+    <TextField fx:id="courseField" promptText="Course"/>
+
+    <Button text="Save Student" onAction="#saveStudent"/>
+    <Label fx:id="messageLabel"/>
+
+</VBox>
